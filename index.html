@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Heritage Motors</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">HERITAGE</div>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#autos">Colección</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <input id="inputBusqueda" placeholder="Buscar...">
+</header>
+
+<section class="hero">
+  <video autoplay muted loop class="bg-video">
+    <source src="videos/14228180-hd_1920_1080_60fps.mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>HERITAGE</h1>
+    <p>Elegancia y potencia</p>
+  </div>
+</section>
+
+<section id="autos" class="autos">
+  <h2 class="section-title">Colección</h2>
+  <div id="autos-container" class="autos-grid"></div>
+</section>
+
+<section id="contacto" class="contacto">
+  <h2 class="section-title">Contacto</h2>
+
+  <form>
+    <input type="text" placeholder="Nombre">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Mensaje"></textarea>
+    <button>Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Heritage Motors</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

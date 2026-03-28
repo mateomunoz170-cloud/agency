@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Detalle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="detalle"></div>
+
+<script>
+const autos = [
+  {id:1,nombre:"BMW M4",precio:75000,img:"images/auto1.jpg"},
+  {id:2,nombre:"Audi R8",precio:120000,img:"images/auto2.jpg"},
+  {id:3,nombre:"AMG GT",precio:95000,img:"images/auto3.jpg"}
+];
+
+let id = localStorage.getItem("autoSeleccionado");
+let auto = autos.find(a=>a.id == id);
+
+document.getElementById("detalle").innerHTML = `
+  <h1>${auto.nombre}</h1>
+  <img src="${auto.img}" style="width:400px">
+  <p>$${auto.precio}</p>
+`;
+</script>
+
+</body>
+</html>
